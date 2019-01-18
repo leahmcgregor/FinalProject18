@@ -344,3 +344,72 @@ print(f"""around 10:00, {you.name} heads to bed. it's been a long day and they c
 """)
 input("""TYPE ANYTHING TO CONTINUE
 """)
+print("""October 1, 2018
+
+PHYSICS CLASS
+""")
+time.sleep(2)
+print(f"""one more class until {you.name} can go home. they drop off their phone in the box at the front of the class and sit down quietly. mrs. vector wastes no time in passing out a thick packet of kinematics problems. jonah hits his head repeatedly on the desk when he reads the first problem.
+""")
+input("""TYPE ANYTHING TO CONTINUE
+""")
+print(f"""jonah: i didn't even start yet and i'm already confused.
+{you.name}: this problem actually isn't that bad. all you have to do is substitute velocity with this equation and use...
+""")
+input("""TYPE ANYTHING TO CONTINUE
+""")
+print(f"""as {you.name} and jonah steadily work through the problems, helen turns around in her seat and taps {you.name} on the shoulder.
+""")
+input("""TYPE ANYTHING TO CONTINUE
+""")
+print("""helen: hey, do you know how to do #3?
+jordan: we were working on it together, but neither of us can get the right answer.
+""")
+value = 0
+while value !=1:
+  helping = input("""OPTIONS:
+  > yeah, do you need help?
+  > no, sorry
+  """)
+  if helping == "yeah, do you need help?":
+    value = 1
+    print(f""" jordan and helen sigh in relief.
+    """)
+    input("""TYPE ANYTHING TO CONTINUE
+    """)
+    print(f"""jordan shows {you.name} her work so far. it's a neat collumn of numbers, variables, and equations. reading it through, they see something stick out.
+    """)
+    input("""TYPE ANYTHING TO CONTINUE
+    """)
+    print(f"""{you.name}: oh, yeah. i see what you did wrong. you mixed up the formula a little bit. delta v is final minus initial, not initial minus final. also you should use this value for time, not the whole interval.
+    jordan: oh, now i see it. thanks!
+    helen: wow, we're really out here stealing your brain cells. thanks for the help!
+    {you.name}: it's not stealing if there are no brain cells for you to take.
+    """)
+    physadvantage += 1
+    you.like += 2
+  elif helping == "no, sorry":
+    value = 1
+    print("""helen: nah, it's good, i guess we'll all perish together.
+    """)
+  else:
+    print("""it looks like you didn't type in any of the above options. try again?
+    """)
+input("""TYPE ANYTHING TO CONTINUE
+""")
+Player.stats(you)
+input("""TYPE ANYTHING TO CONTINUE
+""")
+print("""it's 2:47. everyone is packing up their bags and preparing to leave.
+""")
+input("""TYPE ANYTHING TO CONTINUE
+""")
+print("""mrs. vector: alright, everyone! don't forget to study for the test next class!
+""")
+input("""TYPE ANYTHING TO CONTINUE
+""")
+print("""HOME
+""")
+time.sleep(2)
+print(f"""when {you.name} gets home, they take out their homework and get started. they don't finish it until 8:00. this gives {you.name} only about 2 hours of free time before they need to get ready for bed.
+""")
