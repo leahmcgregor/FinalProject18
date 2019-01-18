@@ -33,7 +33,7 @@ good luck obtaining the grain!
 """)
 input("""TYPE ANYTHING TO CONTINUE
 """)
-print("""disclaimer: any resemblance of any of these characters to actual ucvts students is entirely coincidential.
+print("""disclaimer: any resemblance of any of these characters to actual ucvts students is entirely coincidental.
 """)
 input("""TYPE ANYTHING TO CONTINUE
 """)
@@ -88,7 +88,7 @@ print(f"""on the bus, {you.name} sits next to their best friend, jonah. even tho
 input("""TYPE ANYTHING TO CONTINUE
 """)
 print(f"""jonah: {you.name}, my good sir! how was your summer?
-{you.name}: it was pretty good, i did absolutely nothing which was pretty cool. how about you?
+{you.name}: it was pretty good, i did absolutely nothing, which was pretty cool. how about you?
 jonah: i spent the entire time writing college essays. not my definition of a fun time.
 {you.name}: oof. oh wait! you're taking calculus ab and ap mech this year, right?
 jonah: yeah, why?
@@ -96,7 +96,7 @@ jonah: yeah, why?
 """)
 input("""TYPE ANYTHING TO CONTINUE
 """)
-print("""the duo rustles through their bags and pull out their new schedules.
+print("""the duo rustles through their bags and pulls out their new schedules.
 """)
 input("""TYPE ANYTHING TO CONTINUE
 """)
@@ -123,7 +123,7 @@ print(f"""the auditorium is a zoo. friends reunite after the 2 month long summer
 """)
 input("""TYPE ANYTHING TO CONTINUE
 """)
-print(f"""suddenly, just as {you.name} was comparing their schedule with their friends, the principal raises both of his hands in the air.
+print(f"""suddenly, just as {you.name} starts comparing their schedule with their friends, the principal raises both of his hands in the air.
 
 principal whatshisnuts: hello everyone! good morning and welcome back to school!
 """)
@@ -167,7 +167,7 @@ print("""mrs. vector: good afternoon class! welcome to ap physics c: mechanics! 
 """)
 input("""TYPE ANYTHING TO CONTINUE
 """)
-print(f"""{you.name} locks eyes with jonah and the dynamic duo immediately steals a table next to the wall, high fiving as they lay claim to their new real estate. when jordan enters the classroom, she sits at the table in front of you next to helen. they exchange a complicated secret handshake that involves italian hands and finger circles.
+print(f"""{you.name} locks eyes with jonah and the dynamic duo immediately steals a table next to the wall, high fiving as they lay claim to their new real estate. when jordan enters the classroom, she sits at the table in front of {you.name} next to helen. they exchange a complicated secret handshake that involves italian hands and finger circles.
 """)
 input("""TYPE ANYTHING TO CONTINUE
 """)
@@ -194,7 +194,7 @@ input("""TYPE ANYTHING TO CONTINUE
 Player.stats(you)
 input("""TYPE ANYTHING TO CONTINUE
 """)
-print(f"""other than that, not much else happens in physics class. the bell rings, and you're off to your next class.
+print(f"""other than that, not much else happens in physics class. the bell rings, and {you.name} goes off to their next class.
 """)
 input("""TYPE ANYTHING TO CONTINUE
 """)
@@ -209,11 +209,11 @@ time.sleep(2)
 print(f"""INTRODUCTION TO PROGRAMMING CLASS
 """)
 time.sleep(2)
-print(f"""{you.name} arrives to your second-to-last class of the day earlier than most, with only one other student present so far. normally they'd start this class around noon, but because of the 1st day schedule, it starts at 2:00. the classroom radiates a cozy vibe, with random computer parts and 3d printed models scattered around. {you.name} sits up front, knowing full well that they'd need to pay attention because they have absolutely no previous programming experience.
+print(f"""{you.name} arrives to their second-to-last class of the day earlier than most, with only one other student present so far. normally they'd start this class around noon, but because of the 1st day schedule, it starts at 2:00. the classroom radiates a cozy vibe, with random computer parts and 3d printed models scattered around. {you.name} sits up front, knowing full well that they'd need to pay attention because they have absolutely no previous programming experience.
 """)
 input("""TYPE ANYTHING TO CONTINUE
 """)
-print(f"""the room buzzes with chatter as more students trickle in. jordan strides in, bag slung over one shoulder and takes the seat next to you. she dumps the bag with a *thud* and groans, collapsing into her seat.
+print(f"""the room buzzes with chatter as more students trickle in. jordan strides in, bag slung over one shoulder and takes the seat next to {you.name}. she dumps the bag with a *thud* and groans, collapsing into her seat.
 """)
 input("""TYPE ANYTHING TO CONTINUE
 """)
@@ -237,7 +237,8 @@ while value != 1:
     jordan: oh jeez no, i'm not that insane. i started it 2 days ago, but it took longer than i expected.
     {you.name}: oh good, at least you didn't try and rush it. try to get some sleep tonight, though. you look like you really need it.
     """)
-    time.sleep(10)
+    input("""TYPE ANYTHING TO CONTINUE
+    """)
     print(f"""jordan gives {you.name} a lopsided smile and winks. well, if you could call it winking. it was more of a really weird, twitchy blink. oddly enough, {you.name} found it pretty adorable.
 
     jordan: sure, maybe after i'm 66 and retired.
@@ -263,11 +264,11 @@ input("""TYPE ANYTHING TO CONTINUE
 print("""CALCULUS
 """)
 time.sleep(2)
-print(f"""calculus, the last class of the day goes the same way, but {you.name} does get to sit next to jonah there. the teacher, mr. rolle, is shockingly energetic even after meeting basically 80 students in 1 day. it's almost like he radiates pure sunshine energy.
+print(f"""calculus, the last class of the day, goes the same way, but {you.name} does get to sit next to jonah there. the teacher, mr. rolle, is shockingly energetic even after meeting basically 80 students in 1 day. it's almost like he radiates pure sunshine energy.
 """)
 input("""TYPE ANYTHING TO CONTINUE
 """)
-print(f"""2:50. the bell rings, and the hallways flood with students fleeing class. {you.name} hops on the bus and frown when they see a couple of freshman sitting in jonah and their's usual bus seat. ugh. it looks like they'll have to find somewhere else to sit for the bus ride. {you.name} grabs a 2 seater (which are actually 1 seaters, there's no way 2 grown adults can fit on those without basically cuddling) reluctantly. as jonah gets on the bus, he raises his eyebrows at {you.name} when he sees them there. you subtly nod towards the freshmen. he seems to get it and huffs in annoyance.
+print(f"""2:50. the bell rings, and the hallways flood with students fleeing class. {you.name} hops on the bus and frowns when they see a couple of freshman sitting in jonah and their usual bus seat. ugh. it looks like they'll have to find somewhere else to sit for the bus ride. {you.name} grabs a 2 seater (which are actually 1 seaters, there's no way 2 grown adults can fit on those without basically cuddling) reluctantly. as jonah gets on the bus, he raises his eyebrows at {you.name} when he sees them there. {you.name} subtly nod towards the freshmen. he seems to get it and huffs in annoyance.
 """)
 input("""TYPE ANYTHING TO CONTINUE
 """)
