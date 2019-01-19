@@ -16,11 +16,24 @@ class Player(Character):
     GRADE AVG: {self.grade}
     LIKEABILITY: {self.like}
     """)
+  def win(self):
+    if self.like >= 10 and self.grade >= 90:
+      print(f"""congratulations! you have won the game! {self.name} is currently dating jordan and is a high honor roll student with a grade average of {self.grade}.
+      """)
+    elif self.like >= 10 and self.grade < 90:
+      print(f"""congratulations! you have won the primary objective of the game! {you.name} currently dating jordan. however, they did not acheive honor roll. smh, how will they go to college now?
+      """)
+    elif self.like < 10 and self.grade >= 90:
+      print(f"""sorry, you did not win the game. {you.name} did not end up dating jordan. but hey, at least they have good grades, right?
+        """)
+    elif self.like < 10 and self.grade < 90:
+      print(f"""wow, you took a mega L on this game. {you.name} did not end up dating jordan or earn honor roll.
+      """)
+    print("anywho, thanks for playing my game! i hope you enjoyed playing this as much as i hated coding it.")
 
 calcadvantage = 0
 physadvantage = 0
-chemadvantage = 0
-#these are points that will raise the grade of the character whenever they take a test. they are earned by studying for a specific subject.
+#these are points that will raise the grade of the character whenever they take a test/quiz. they are earned by studying for a specific subject. these stats are purposely hidden from the player.
 
 print("""DATING SIMULATOR V1.0
 """)
@@ -344,9 +357,51 @@ print(f"""around 10:00, {you.name} heads to bed. it's been a long day and they c
 """)
 input("""TYPE ANYTHING TO CONTINUE
 """)
-print("""October 1, 2018
-
-PHYSICS CLASS
+print("""September 16, 2018
+""")
+time.sleep(2)
+print("""AUDITORIUM
+""")
+time.sleep(2)
+print(f"""{you.name} enters the auditorium at 7:45. they don't spot isaac or helen anywhere, but jordan is sitting alone. she smiles and waves {you.name} over.
+""")
+input("""TYPE ANYTHING TO CONTINUE
+""")
+if day1time == "make memes":
+  print(f"""jordan: hey {you.name}! jonah sent me this while we were working on the physics lab the other day!
+  {you.name}: huh, he sent you my meme?
+  jordan: your meme? wait you made this?
+  {you.name}: yeah, i made it a few weeks ago.
+  jordan: oh, that's cool! for real though, it was pretty funny.
+  {you.name}: haha thanks, but it was a little trash.
+  """)
+  you.like += 1
+elif day1time == "binge youtube":
+  print(f"""jordan: yo, did you see that video where joana ceddia followed a bob ross tutorial while blindfolded?
+  {you.name}: yeah, it was pretty insane. she did surprisingly well, too. it actually vaguely resembled the original.
+  jordan: well, it still looked like a 5 year old did it.
+  {you.name}: i mean yeah, but like a talented 5 year old did it.
+  """)
+  you.like += 1
+elif day1time == "practice guitar":
+  print(f"""jordan: hey, isaac told me you play guitar! that's pretty cool.
+  {you.name}: oh, yeah! i don't get that much time to practice nowadays because of school, but i try to kind of stay on top of it.
+  jordan: i actually play the bass and drums, maybe we should play together sometime!
+  {you.name}: oh, that would be lit!
+  """)
+  you.like +=1
+else:
+  print(f"""{you.name} sits next to her, but before they get a chance to talk, it's already 7:50. helen runs up to jordan and the pair leave towards their first class.
+  """)
+input("""TYPE ANYTHING TO CONTINUE
+""")
+Player.stats(you)
+input("""TYPE ANYTHING TO CONTINUE
+""")
+print("""~TIME SKIP (+5 hours)~
+""")
+time.sleep(2)
+print("""PHYSICS CLASS
 """)
 time.sleep(2)
 print(f"""one more class until {you.name} can go home. they drop off their phone in the box at the front of the class and sit down quietly. mrs. vector wastes no time in passing out a thick packet of kinematics problems. jonah hits his head repeatedly on the desk when he reads the first problem.
@@ -411,5 +466,266 @@ input("""TYPE ANYTHING TO CONTINUE
 print("""HOME
 """)
 time.sleep(2)
-print(f"""when {you.name} gets home, they take out their homework and get started. they don't finish it until 8:00. this gives {you.name} only about 2 hours of free time before they need to get ready for bed.
+print(f"""when {you.name} gets home, they take out their homework and get started. they don't finish it until 8:00. this gives {you.name} only about 2 hours of free time before they need to get ready for bed. how do they spend it?
 """)
+value = 0
+while value != 1:
+  day2time = input("""OPTIONS:
+  > study for physics
+  > procrastinate
+  """)
+  if day2time == "study for physics":
+    value = 1
+    physadvantage += 1
+    print(f"""{you.name} decides to reopen their physics textbook and work through a few extra problems. by 10:00, their brain feels a little melted, but they understand the material better.
+    """)
+  elif day2time == "procrastinate":
+    print(f"""{you.name} probably could have used this time to prepare for that physics test, but honestly? they're just too tired to bother. instead, they go to bed early and fall asleep instantly.
+    """)
+input("""TYPE ANYTHING TO CONTINUE
+""")
+print("""September 18, 2018
+
+PHYSICS CLASS
+""")
+time.sleep(2)
+if physadvantage == 2:
+  print(f"""as {you.name} walks into the classroom, they feel confident. they move through the problems at a steady pace and have ample time to check their work.
+  """)
+  you.grade +=3
+elif physadvantage == 1:
+  print(f"""{you.name} is only slightly nervous as they walk into physics. they struggle a bit with the last open-ended problems, but overall they think they did a decent job.
+  """)
+  you.grade += 2
+else:
+  print(f"""{you.name} feels a little jittery walking into the classroom. they're not as prepared as they should be, and their performance show it. they had to guess on 2 problems, but it could have been much worse.
+  """)
+  you.grade -= 2
+input("""TYPE ANYTHING TO CONTINUE
+""")
+Player.stats(you)
+input("""TYPE ANYTHING TO CONTINUE
+""")
+print("""HOME
+""")
+time.sleep(2)
+print(f"""as {you.name} works on some calculus homework due tomorrow, their dad knocks on their bedroom door.
+""")
+input("""TYPE ANYTHING TO CONTINUE
+""")
+print("""dad: hey, i was just wondering if you needed help with any of your calculus. you know, i was really good at it back when i was your age.
+""")
+value = 0
+while value != 1:
+  dadhelp = input("""OPTIONS:
+  > sure
+  > no thanks
+  """)
+  if dadhelp == "sure":
+    value = 1
+    print(f"""{you.name}'s dad smiles ear to ear as he pulls over a chair next to your desk.
+    """)
+    input("""TYPE ANYTHING TO CONTINUE
+    """)
+    print("""dad: okay, so what unit are you working on right now?
+    """)
+    input("""TYPE ANYTHING TO CONTINUE
+    """)
+    print(f"""not only does {you.name} get to finish their homework faster, they get to spend a nice evening with their dad. it's a win-win.
+    """)
+    calcadvantage += 1
+  elif dadhelp == "no thanks":
+    value = 1
+    print("""dad: oh, okay! if you ever need me or have any questions, feel free to ask me!
+    """)
+    input("""TYPE ANYTHING TO CONTINUE
+    """)
+    print(f"""{you.name} feels bad turning down their dad's offer for free help, but really, they can do this on their own. it takes a while, but they eventually finish it.
+    """)
+  else:
+    print("""what you entered was not one of the above options. please enter another option.
+      """)
+input("""TYPE ANYTHING TO CONTINUE
+""")
+print("""October 21, 2018)
+""")
+time.sleep(2)
+print("""PROGRAMMING CLASS
+""")
+time.sleep(2)
+print(f"""while waiting for class to start, isaac and jordan are avidly discussing whether or not hot dogs are sandwiches. mrs. coding is judging them in the background. isaac turns to {you.name} in desperation.
+""")
+input("""TYPE ANYTHING TO CONTINUE
+""")
+print(f"""isaac: {you.name}, you're a relatively sane human being. tell me, do you think a hot dog is a sandwich?
+""")
+value = 0
+while value != 1:
+  hotdog = input("""OPTIONS:
+  > yes
+  > no
+  """)
+  if hotdog == "yes":
+    value = 1
+    print(f"""jordan raises her hands triumphantly and isaac gives {you.name} a death glare.
+    """)
+    input("""TYPE ANYTHING TO CONTINUE
+    """)
+    print(f"""jordan: hah, i told you i was right! even {you.name} agrees with me!
+    isaac: all of you are dead to me, i'm leaving.
+    """)
+    you.like += 1
+  elif hotdog == "no":
+    value = 1
+    print("""jordan gasps dramatically in betrayal while isaac grins smugly.
+    """)
+    input("""TYPE ANYTHING TO CONTINUE
+    """)
+    print(f"""jordan: {you.name}! how could you?
+    {you.name}: what? it's true!
+    isaac: i knew i could count on you to not be stupid! jordan, take notes.
+    """)
+  else:
+    print("""your answer is not one of the above options. please re-enter your response.
+    """)
+input("""TYPE ANYTHING TO CONTINUE
+""")
+Player.stats(you)
+input("""TYPE ANYTHING TO CONTINUE
+""")
+print("""CALCULUS CLASS
+""")
+time.sleep(2)
+print(f"""when entering the classroom, {you.name} feels an inexplicable sense of dread. shrugging it off, they sit down and take out their notebook and homework as usual. when they see mr. rolle erase the do now before anyone could start it, they connect the dots. oh no.
+""")
+input("""TYPE ANYTHING TO CONTINUE
+""")
+print("""mr. rolle: alright everyone! put away your notes. it's time for a pop quiz! i'm sure you'll all do fine, it's only 2 problems. remember, don't stress too much, it's not as hard as it looks.
+""")
+input("""TYPE ANYTHING TO CONTINUE
+""")
+print(f"""{you.name} stresses anyways.
+""")
+input("""TYPE ANYTHING TO CONTINUE
+""")
+if calcadvantage >= 2:
+  print(f"""huh. it actually isn't that bad. {you.name} completes the quiz in 5 minutes, gives it a quick twice-over, and turns it in.
+  """)
+  you.grade += 2
+elif calcadvantage == 1:
+  print(f"""the calculus part of the problem is relatively easy, but the simplifying and algebra is kind of tricky. when {you.name} is satisfied with their work, they turn it in.
+  """)
+  you.grade += 1
+else:
+  print("""the numbers seem to swim around the page as {you.name} works. they do your best to show their work, but they don't think they did it right.
+  """)
+  you.grade -= 1
+input("""TYPE ANYTHING TO CONTINUE
+""")
+Player.stats(you)
+input("""TYPE ANYTHING TO CONTINUE
+""")
+
+print("""November 12, 2018
+""")
+time.sleep(2)
+print("""SCHOOL HALLWAYS
+""")
+print(f"""{you.name} and jonah are taking laps around the school during lunch. as they walk by the chemistry room, {you.name} sees jordan performing a titration lab.
+""")
+input("""TYPE ANYTHING TO CONTINUE
+""")
+if you.like >= 10:
+  print("""jordan spots {you.name} through the window and waves excitedly. you give a 2-finger salute back. in response, she t-poses and asserts her dominance.
+  """)
+  input("""TYPE ANYTHING TO CONTINUE
+  """)
+  print(f"""jonah: you know she likes you, right?
+  {you.name}: asdfghjkdwqeqtwfyguhiwdef what
+  jonah: yeah, she told me that she's been crushing on you fr like a month now.
+  jonah: ...
+  jonah: did you not realize that?
+  {you.name}: well duh i didn't realize that! i would have asked her out by now if i did! i've liked her since september!
+  jonah: wow, you really are useless huh
+  """)
+  input("""TYPE ANYTHING TO CONTINUE
+  """)
+  print(f"""{you.name} glares at jonah.
+  """)
+  time.sleep(2)
+  print(f"""{you.name}: honestly? i can't even argue that.
+  jonah: well, what are you waiting for now? i'll ditch you now so you can ask her out after co finishes.
+  {you.name}: thanks fam, you are the ultimate wingman. what would i do without you?
+  jonah: die, probably
+  """)
+  input("""TYPE ANYTHING TO CONTINUE
+  """)
+  print(f"""jonah peaces out and {you.name} waits anxiously for period 5 to end. when it does, jordan is one of the last to walk out of the room. she seems pleasantly surprised to see them leaning against the wall, waiting for her.
+  """)
+  input("""TYPE ANYTHING TO CONTINUE
+  """)
+  print(f"""jordan: hey, were you waiting there for me?
+  {you.name}: yeah, but only for like 10 minutes, it's fine
+  """)
+  input("""TYPE ANYTHING TO CONTINUE
+  """)
+  print("""a hint of a blush appears on jordan's face.
+  """)
+  input("""TYPE ANYTHING TO CONTINUE
+  """)
+  print(f"""jordan: you know you didn't have to do that.
+  {you.name}: nah, i wanted to.
+  """)
+  input("""TYPE ANYTHING TO CONTINUE
+  """)
+  print(f"""jordan almost trips over a pencil after they say that. okay, she's definitely blushing. that's probably a good sign. right?
+  """)
+  input("""TYPE ANYTHING TO CONTINUE
+  """)
+  print(f"""{you.name}: anyways, i was wondering if you wanted to hang out with me after school this friday. preferably doing literally anything but schoolwork. like, maybe dinner? a movie? both? heck, i don't know. this is my terrible attempt of asking you out.
+  """)
+  input("""TYPE ANYTHING TO CONTINUE
+  """)
+  print("""...
+  """)
+  time.sleep(5)
+  if day1time == "practice guitar":
+    print("""jordan: i think that would be nice. oh! we could also get around to jamming together like we said we would do!
+    {you.name}: dang, that's such a better first date idea. why didn't i think of that?
+
+    jordan just sticks her tongue out at you. what a toddler.
+    """)
+  else:
+   print(f"""jordan: i think i'd like that. a lot, actually.
+   {you.name}: wait really?
+   jordan: yeah. you're cute, funny, and a genuinely good person. why wouldn't i like to go on a date with you?
+   """)
+   input("""TYPE ANYTHING TO CONTINUE
+    """)
+   print(f"""now it's {you.name}'s turn to be a blushing stuttering mess. jordan laughs and pats you on the head.
+
+   jordan: you good there?
+   {you.name}: n o
+    """)
+  input("""TYPE ANYTHING TO CONTINUE
+  """)
+  print(f"""jordan gently taps {you.name}'s inner wrist with two fingers as a subtle offer to hold her hand. they accept gladly and walk around the school chatting about anything and nothing, hands intertwined and slightly leaning into each other.
+  """)
+else:
+ print(f"""{you.name} and jonah walk past the chemistry room and round the corner.
+  """)
+ input("""TYPE ANYTHING TO CONTINUE
+ """)
+ print(f"""{you.name}: you know, i've had a thing for her since the beginning of this year.
+ jonah: who? jordan?
+ {you.name}: yeah.
+ jonah: oh, oof. what do you plan on doing about it?
+ {you.name}: i think i'm going to try to forget about it. i don't think it's going to go anywhere. besides, she already makes a great friend. i think it would be best to just leave it this way.
+ jonah: okay... you know i've got you if you need to talk about your feelings or anything, right?
+ {you.name}: yeah, i know. i'm actually good though.
+ """)
+ input("""TYPE ANYTHING TO CONTINUE
+ """)
+ print(f"""{you.name} and jonah continue to walk around the hallway, laughing and joking as they always did. sure, giving up on a crush sucked, but it wasn't the end of the world.
+ """)
+Player.win(you)
