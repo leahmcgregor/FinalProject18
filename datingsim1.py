@@ -63,10 +63,6 @@ yourname = input("what is the name of your character? ")
 
 you = Player(yourname, 80, 5)
 
-crush = Character("Jordan", 91)
-
-frendo = Character("Jonah", 89)
-
 Player.stats(you)
 print("""September 6, 2018
 
@@ -208,8 +204,6 @@ elif wakeup == "snooze":
   mrs. vector: make sure to bring it in tomorrow, i'm going to have to take points off for late work though.
   """)
   you.grade -= 5
-frendo.grade += 5
-crush.grade += 1
 input("""TYPE ANYTHING TO CONTINUE
 """)
 Player.stats(you)
