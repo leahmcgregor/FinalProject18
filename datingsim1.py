@@ -638,7 +638,7 @@ print(f"""{you.name} and jonah are taking laps around the school during lunch. a
 input("""TYPE ANYTHING TO CONTINUE
 """)
 if you.like >= 10:
-  print("""jordan spots {you.name} through the window and waves excitedly. you give a 2-finger salute back. in response, she t-poses and asserts her dominance.
+  print(f"""jordan spots {you.name} through the window and waves excitedly. they give a 2-finger salute back. in response, she t-poses and asserts her dominance.
   """)
   input("""TYPE ANYTHING TO CONTINUE
   """)
@@ -704,7 +704,7 @@ if you.like >= 10:
    """)
    input("""TYPE ANYTHING TO CONTINUE
     """)
-   print(f"""now it's {you.name}'s turn to be a blushing stuttering mess. jordan laughs and pats you on the head.
+   print(f"""now it's {you.name}'s turn to be a blushing stuttering mess. jordan laughs and pats them on the head.
 
    jordan: you good there?
    {you.name}: n o
