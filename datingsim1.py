@@ -29,7 +29,15 @@ class Player(Character):
     elif self.like < 10 and self.grade < 90:
       print(f"""wow, you took a mega L on this game. {you.name} did not end up dating jordan or earn honor roll.
       """)
-    print("anywho, thanks for playing my game! i hope you enjoyed playing this as much as i hated coding it.")
+    print("""anywho, thanks for playing my game! i hope you enjoyed playing this as much as i hated coding it.
+    """)
+    input("""TYPE ANYTHING TO CONTINUE
+    """)
+    print("""... oh yeah! one last thing!
+    """)
+    time.sleep(5)
+    print("👌")
+
 
 calcadvantage = 0
 physadvantage = 0
@@ -642,7 +650,7 @@ if you.like >= 10:
   """)
   print(f"""jonah: you know she likes you, right?
   {you.name}: asdfghjkdwqeqtwfyguhiwdef what
-  jonah: yeah, she told me that she's been crushing on you fr like a month now.
+  jonah: yeah, she told me that she's been crushing on you for like a month now.
   jonah: ...
   jonah: did you not realize that?
   {you.name}: well duh i didn't realize that! i would have asked her out by now if i did! i've liked her since september!
