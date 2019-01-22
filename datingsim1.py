@@ -619,7 +619,7 @@ elif calcadvantage == 1:
   """)
   you.grade += 1
 else:
-  print("""the numbers seem to swim around the page as {you.name} works. they do your best to show their work, but they don't think they did it right.
+  print(f"""the numbers seem to swim around the page as {you.name} works. they do your best to show their work, but they don't think they did it right.
   """)
   you.grade -= 1
 input("""TYPE ANYTHING TO CONTINUE
@@ -692,7 +692,7 @@ if you.like >= 10:
   """)
   time.sleep(5)
   if day1time == "practice guitar":
-    print("""jordan: i think that would be nice. oh! we could also get around to jamming together like we said we would do!
+    print(f"""jordan: i think that would be nice. oh! we could also get around to jamming together like we said we would do!
     {you.name}: dang, that's such a better first date idea. why didn't i think of that?
 
     jordan just sticks her tongue out at you. what a toddler.
