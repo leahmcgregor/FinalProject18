@@ -2,10 +2,12 @@ import random
 import time
 
 class Character:
-  """i really thought this would be more important because i planned on making the game more complicated, with your choices affecting jonah and jordan's grades but i didn't have time so now it's just a leftover :("""
+  """gives stats to side characters"""
   def __init__(self, name, grade):
     self.name = name.lower()
     self.grade = grade
+
+#the character class was originally going to be useful, but i ended up not using it. i was going to make the grades of your friends (jonah, isaac, helen, jordan, etc) fluctuate after tests so that it would prompt random extra dialogues for you to better get to know the extra characters, but i scrapped the concept because i didn't think i'd have time to finish it. that's also why in some of my older commits, i had that import random lying around. i want to leave this here in case i ever go back to this game and spice it up a bit :)
 
 class Player(Character):
   """adds the likeability stat to the character, used only in the player"""
@@ -40,7 +42,7 @@ class Player(Character):
     print("""... oh yeah! one last thing!
     """)
     time.sleep(5)
-    print("👌")
+    print("👌")#hahahaha gotem
 
 
 calcadvantage = 0
@@ -335,7 +337,7 @@ while value != 1:
     value = 1
     print(f"""{you.name} lets out an evil cackle as they open up photoshop. 2 hours later, and they have an arsenal of fresh, spicy memes, straight from the oven. {you.name} sends an image of a t posing thanos to jonah, who keysmashes in reply.
     """)
-    #unlocks text conversation with jordan later if you get her number
+    #unlocks conversation with jordan later. fun fact: i was going to also try to work in a chance to get jordan's phone number so that you could text her memes in the morning :)
   else:
     print("""what you typed in was not one of the available options. try again?
   """)
@@ -446,7 +448,7 @@ while value !=1:
     jordan: oh, now i see it. thanks!
     helen: wow, we're really out here stealing your brain cells. thanks for the help!
     {you.name}: it's not stealing if there are no brain cells for you to take.
-    """)
+    """)#you helping other people is extra practice for you, hence the advantage in physics
     physadvantage += 1
     you.like += 2
   elif helping == "no, sorry":
@@ -543,7 +545,7 @@ while value != 1:
   elif dadhelp == "no thanks":
     value = 1
     print("""dad: oh, okay! if you ever need me or have any questions, feel free to ask me!
-    """)
+    """)#yeah, i made the dad as wholesome as possible.
     input("""TYPE ANYTHING TO CONTINUE
     """)
     print(f"""{you.name} feels bad turning down their dad's offer for free help, but really, they can do this on their own. it takes a while, but they eventually finish it.
@@ -560,7 +562,7 @@ print("""PROGRAMMING CLASS
 """)
 time.sleep(2)
 print(f"""while waiting for class to start, isaac and jordan are avidly discussing whether or not hot dogs are sandwiches. mrs. coding is judging them in the background. isaac turns to {you.name} in desperation.
-""")
+""")#the character and player aren't supposed to know which would be the "right" answer for this
 input("""TYPE ANYTHING TO CONTINUE
 """)
 print(f"""isaac: {you.name}, you're a relatively sane human being. tell me, do you think a hot dog is a sandwich?
@@ -574,7 +576,7 @@ while value != 1:
   if hotdog == "yes":
     value = 1
     print(f"""jordan raises her hands triumphantly and isaac gives {you.name} a death glare.
-    """)
+    """)#disclaimer: no, i don't think hot dogs are sandwiches. jordan is 100% incorrect, and anyone who seriously agrees with her is a menace to society.
     input("""TYPE ANYTHING TO CONTINUE
     """)
     print(f"""jordan: hah, i told you i was right! even {you.name} agrees with me!
@@ -603,7 +605,7 @@ print("""CALCULUS CLASS
 """)
 time.sleep(2)
 print(f"""when entering the classroom, {you.name} feels an inexplicable sense of dread. shrugging it off, they sit down and take out their notebook and homework as usual. when they see mr. rolle erase the do now before anyone could start it, they connect the dots. oh no.
-""")
+""")#dun dun dun, forshadowing
 input("""TYPE ANYTHING TO CONTINUE
 """)
 print("""mr. rolle: alright everyone! put away your notes. it's time for a pop quiz! i'm sure you'll all do fine, it's only 2 problems. remember, don't stress too much, it's not as hard as it looks.
@@ -733,5 +735,5 @@ else:
  input("""TYPE ANYTHING TO CONTINUE
  """)
  print(f"""{you.name} and jonah continue to walk around the hallway, laughing and joking as they always did. sure, giving up on a crush sucked, but it wasn't the end of the world.
- """)
+ """)#i wanted to make clear that the character is still 100% capable of being happy, even without dating anyone :)
 Player.win(you)
