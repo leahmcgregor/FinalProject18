@@ -2,11 +2,13 @@ import random
 import time
 
 class Character:
+  """i really thought this would be more important because i planned on making the game more complicated, with your choices affecting jonah and jordan's grades but i didn't have time so now it's just a leftover :("""
   def __init__(self, name, grade):
     self.name = name.lower()
     self.grade = grade
 
 class Player(Character):
+  """adds the likeability stat to the character, used only in the player"""
   def __init__(self, name, grade, like):
     Character.__init__(self, name, grade)
     self.like = like
