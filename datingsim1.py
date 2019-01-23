@@ -695,7 +695,7 @@ if you.like >= 10:
     print(f"""jordan: i think that would be nice. oh! we could also get around to jamming together like we said we would do!
     {you.name}: dang, that's such a better first date idea. why didn't i think of that?
 
-    jordan just sticks her tongue out at you. what a toddler.
+    jordan just sticks her tongue out at them. what a toddler.
     """)
   else:
    print(f"""jordan: i think i'd like that. a lot, actually.
