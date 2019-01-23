@@ -12,11 +12,13 @@ class Player(Character):
     self.like = like
 
   def stats(self):
+    """gives character's current stats"""
     print(f"""{self.name.upper()}'S CURRENT STATS
     GRADE AVG: {self.grade}
     LIKEABILITY: {self.like}
     """)
   def win(self):
+    """determines what ending the character gets"""
     if self.like >= 10 and self.grade >= 90:
       print(f"""congratulations! you have won the game! {self.name} is currently dating jordan and is a high honor roll student with a grade average of {self.grade}.
       """)
