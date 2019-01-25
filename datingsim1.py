@@ -278,7 +278,7 @@ input("""TYPE ANYTHING TO CONTINUE
 Player.stats(you)
 input("""TYPE ANYTHING TO CONTINUE
 """)
-print(f"""after about 5 minutes, mrs. coding starts class. like most of the other teaches, she passes out a syllabus. overall, it isn't very eventful.
+print(f"""after about 5 minutes, mrs. coding starts class. like most of the other teachers, she passes out a syllabus. overall, it isn't very eventful.
 """)
 input("""TYPE ANYTHING TO CONTINUE
 """)
@@ -488,8 +488,12 @@ while value != 1:
     print(f"""{you.name} decides to reopen their physics textbook and work through a few extra problems. by 10:00, their brain feels a little melted, but they understand the material better.
     """)
   elif day2time == "procrastinate":
+    value = 1
     print(f"""{you.name} probably could have used this time to prepare for that physics test, but honestly? they're just too tired to bother. instead, they go to bed early and fall asleep instantly.
     """)
+  else:
+    print("""ah, you must not have entered one of the above options. try again?
+    """
 input("""TYPE ANYTHING TO CONTINUE
 """)
 print("""September 18, 2018
@@ -555,7 +559,7 @@ while value != 1:
       """)
 input("""TYPE ANYTHING TO CONTINUE
 """)
-print("""October 21, 2018)
+print("""October 21, 2018
 """)
 time.sleep(2)
 print("""PROGRAMMING CLASS
