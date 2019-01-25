@@ -493,7 +493,7 @@ while value != 1:
     """)
   else:
     print("""ah, you must not have entered one of the above options. try again?
-    """
+    """)
 input("""TYPE ANYTHING TO CONTINUE
 """)
 print("""September 18, 2018
